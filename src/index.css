@@ -1,13 +1,114 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* Font */
+@import url(https://cdn.jsdelivr.net/gh/tonsky/FiraCode@5.2/distr/fira_code.css);
+
+:root {
+  --primary-white: #fff;
+  --primary-yellow: #ffbc40;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Fira Code" !important;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background-color: var(--bs-pink);
+  /* border-radius: 100px; */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--bs-yellow);
+  border-radius: 100px;
+}
+
+nav {
+  position: relative;
+  z-index: 1;
+}
+
+.logo {
+  width: 50px;
+  outline: none;
+}
+
+.home-section {
+  background-image: url("/src/img/eclipse.jpg");
+  background-position: center;
+  background-size: cover;
+  min-height: 90vh;
+  color: var(--primary-white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid red; */
+  position: relative;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  flex-direction: column;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 380px;
+  position: relative;
+  left: 50px;
+  top: 30px;
+}
+
+.home-section h1 {
+  display: flex;
+  font-size: 80px;
+  text-align: left;
+}
+
+.home-section .hello {
+  font-size: 20px !important;
+}
+
+.home-section p {
+  font-size: 30px;
+}
+
+.home-section .content {
+  display: block;
+}
+
+.type-text {
+  color: var(--primary-yellow);
+}
+
+@media (max-width: 768px) {
+  .content {
+    width: 250px;
+    position: relative;
+    left: -10px;
+    top: -10px;
+  }
+  .content .hello {
+    font-size: 18px !important;
+  }
+  .content h1 {
+    font-size: 35px !important;
+  }
+
+  .type-text,
+  .home-section p {
+    font-size: 18px;
+  }
+  #tsparticles {
+    visibility: hidden;
+  }
+  .home-section .buttons {
+    position: relative !important;
+    top: -10px !important;
+  }
 }
