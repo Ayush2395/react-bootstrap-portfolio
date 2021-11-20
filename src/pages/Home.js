@@ -1,5 +1,6 @@
 import React from "react";
 import { Col, Row, Button, Container } from "react-bootstrap";
+import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import { Typewriter } from "react-simple-typewriter";
 import ParticlesBackground from "../components/ParticlesBackground";
@@ -7,8 +8,13 @@ import ParticlesBackground from "../components/ParticlesBackground";
 function Home() {
   return (
     <div>
+
+        <Helmet>
+            <title>Ayush | Home</title>
+        </Helmet>
+
       <div className="home-section">
-          <ParticlesBackground />
+        <ParticlesBackground />
         <div className="content">
           <span className="hello">Hi I'm</span>
           <h1>Ayush</h1>
@@ -20,7 +26,7 @@ function Home() {
                 cursor
                 cursorStyle="_"
                 typeSpeed={50}
-                deleteSpeed={70}
+                deleteSpeed={20}
                 delaySpeed={1500}
                 words={[
                   "Web developer",
