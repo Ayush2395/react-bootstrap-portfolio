@@ -4,9 +4,12 @@ import { Helmet } from "react-helmet";
 import background from "../img/contact.png";
 import ParticlesBackground from "../components/ParticlesBackground";
 import { BiMessageSquareDetail } from "react-icons/bi";
+import { BsFacebook, BsGithub, BsInstagram, BsTwitter } from "react-icons/bs";
 import emailjs from "emailjs-com";
 
 function Contact() {
+  const [hide, setHide] = useState(false);
+
   const form = useRef();
 
   const [values, setValues] = useState({
@@ -148,13 +151,44 @@ function Contact() {
             </Container>
           </Col>
           <Col>
-            <a rel="noopener" href="https://www.freepik.com/vectors/job">
-              <img
-                className="contact-bg ms-5 mt-5"
-                src={background}
-                alt="background"
-              />
-            </a>
+            <img
+              className="contact-bg ms-5 mt-5"
+              src={background}
+              alt="background"
+            />
+          </Col>
+        </Row>
+        <Row className="mt-0 social-group" md={1}>
+          <Col>
+            <div className="social-media-btn">
+              <Button variant="outline-success" onClick={() => setHide(!hide)}>
+                Follow
+              </Button>
+            </div>
+          </Col>
+          <Col>
+            {hide ? (
+              <div className="social-media">
+                <a
+                  rel="noopener"
+                  href="https://www.facebook.com/ayush.chopra.549668"
+                >
+                  <BsFacebook size="25px" />
+                </a>
+                <a
+                  rel="noopener"
+                  href="https://www.instagram.com/official_mandal_saab/"
+                >
+                  <BsInstagram size="25px" color="var(--primary-red)" />
+                </a>
+                <a rel="noopener" href="https://github.com/Ayush2395">
+                  <BsGithub size="25px" color="var(--primary-dark)" />
+                </a>
+                <a rel="noopener" href="https://twitter.com/Mandal_SaaB03">
+                  <BsTwitter size="25px" color="var(--primary-blue)" />
+                </a>
+              </div>
+            ) : null}
           </Col>
         </Row>
       </Container>

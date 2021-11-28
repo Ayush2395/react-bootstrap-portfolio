@@ -6,7 +6,10 @@ import styled from "styled-components";
 import Buttons from "../components/Buttons";
 import profilePic from "../img/about-img.png";
 import { RiYoutubeLine } from "react-icons/ri";
-import { SiYoutubestudio } from "react-icons/si";
+import { SiAdobeaftereffects, SiAdobephotoshop, SiAdobepremierepro, SiBootstrap, SiYoutubestudio } from "react-icons/si";
+import {AiFillHtml5} from 'react-icons/ai'
+import {DiCss3, DiReact} from 'react-icons/di'
+import {SiJavascript} from 'react-icons/si'
 
 const SkillsStyle = styled.div`
   .skills {
@@ -54,14 +57,14 @@ function About() {
                     <SkillsStyle className="skills">
                       <div className="skill-bar"></div>
                       <div className="skill-content">
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>Javascript</span>
-                        <span>React.js</span>
-                        <span>Bootstrap</span>
-                        <span>Adobe Premiere Pro</span>
-                        <span>Adobe Photoshop</span>
-                        <span>Adobe After Effects</span>
+                        <span>HTML <AiFillHtml5 color='var(--primary-orange)' /></span>
+                        <span>CSS <DiCss3 color='var(--primary-blue)'/></span>
+                        <span>Javascript <SiJavascript color='var(--primary-yellow)'/></span>
+                        <span>React.js <DiReact color='var(--react-blue)'/></span>
+                        <span>Bootstrap <SiBootstrap color='var(--primary-purple)'/></span>
+                        <span>Adobe Premiere Pro <SiAdobepremierepro color='var(--dark-purple)'/></span>
+                        <span>Adobe Photoshop <SiAdobephotoshop color='var(--primary-blue)'/></span>
+                        <span>Adobe After Effects <SiAdobeaftereffects color='var(--primary-purple)'/></span>
                       </div>
                     </SkillsStyle>
                   </Accordion.Body>

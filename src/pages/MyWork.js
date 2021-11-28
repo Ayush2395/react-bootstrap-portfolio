@@ -1,15 +1,16 @@
-import React from 'react'
-import { Helmet } from 'react-helmet'
+import React from "react";
+import { Helmet } from "react-helmet";
+import UnderCons from "../components/UnderCons";
 
 function MyWork() {
-    return (
-        <div>
-            <Helmet>
-            <title>Ayush | My Work</title>
-        </Helmet>
-            <h1>My work Page</h1>
-        </div>
-    )
+  return (
+    <div>
+      <Helmet>
+        <title>Ayush | My Work</title>
+      </Helmet>
+      <UnderCons pageTitle='My Work' />
+    </div>
+  );
 }
 
-export default MyWork
+export default MyWork;

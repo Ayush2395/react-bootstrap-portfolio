@@ -1,5 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet";
+import UnderCons from "../components/UnderCons";
 
 function Services() {
   return (
@@ -7,7 +8,7 @@ function Services() {
       <Helmet>
         <title>Ayush | Services</title>
       </Helmet>
-      <h1>Services Page</h1>
+      <UnderCons/>
     </div>
   );
 }

@@ -1,5 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet";
+import UnderCons from "../components/UnderCons";
 
 function Projects() {
   return (
@@ -7,7 +8,7 @@ function Projects() {
       <Helmet>
         <title>Ayush | Projects</title>
       </Helmet>
-      <h1>Projects Page</h1>
+      <UnderCons/>
     </div>
   );
 }
