@@ -142,7 +142,7 @@ function About() {
                       </span>
                     </span>
                     <span style={{ fontSize: "15px", opacity: "0.8" }}>
-                      Gulzar Group of Institution,{"["}
+                      Gulzar Group of Institute,{"["}
                       <Typewriter
                         loop
                         cursor
