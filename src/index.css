@@ -272,8 +272,18 @@ nav {
   top: 30px;
 }
 
-.social-media-btn{
+.social-media-btn {
   display: inline-block;
   position: relative;
   left: 10px;
+}
+
+.navbar-dark .navbar-toggler {
+  border-color: var(--primary-yellow) !important;
+}
+
+.navbar-toggler:focus {
+  text-decoration: none;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem var(--primary-orange) !important;
 }

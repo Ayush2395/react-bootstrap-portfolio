@@ -1,8 +1,8 @@
 import React from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
+import { CgMenuCheese } from "react-icons/cg";
 import { Link } from "react-router-dom";
 import logo from "../img/logo.png";
-// import { BiMenuAltRight } from "react-icons/bi";
 
 function NavigationBar() {
   return (
@@ -14,7 +14,9 @@ function NavigationBar() {
               <img className="logo" src={logo} alt="" />
             </Link>
           </Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Toggle aria-controls="basic-navbar-nav">
+            <CgMenuCheese color="var(--primary-yellow)" size="35px" />
+          </Navbar.Toggle>
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
               <Nav.Link as={Link} to="/">
