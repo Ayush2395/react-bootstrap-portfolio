@@ -161,7 +161,7 @@ function Contact() {
         <Row className="mt-0 social-group" md={1}>
           <Col>
             <div className="social-media-btn">
-              <Button variant="outline-success" onClick={() => setHide(!hide)}>
+              <Button variant="outline-primary" onClick={() => setHide(!hide)}>
                 Follow
               </Button>
             </div>

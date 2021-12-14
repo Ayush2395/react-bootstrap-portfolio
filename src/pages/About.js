@@ -32,7 +32,7 @@ const SkillsStyle = styled.div`
     border: 2px solid var(--primary-red);
     border-radius: 20px;
     font-size: 20px;
-    color: var(--primary-dark);
+    color: white;
     transition: width 0.5s ease;
   }
 `;

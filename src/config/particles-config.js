@@ -1,23 +1,23 @@
 const particlesConfig = {
   particles: {
     number: {
-      value: 50,
+      value: 80,
       density: {
         enable: true,
-        value_area: 800,
+        value_area: 850,
       },
     },
     color: {
-      value: "#ffffff",
+      value: "rgb(83, 235, 255)",
     },
     shape: {
-      type: "circle",
+      type: "triangle",
       stroke: {
         width: 0,
         color: "#000000",
       },
       polygon: {
-        nb_sides: 4,
+        nb_sides: 5,
       },
       image: {
         src: "img/github.svg",
@@ -39,24 +39,24 @@ const particlesConfig = {
       value: 3,
       random: true,
       anim: {
-        enable: true,
+        enable: false,
         speed: 40,
         size_min: 0.1,
-        sync: true,
+        sync: false,
       },
     },
     line_linked: {
       enable: true,
-      distance: 144.21690222094043,
-      color: "#ffbc40",
+      distance: 130,
+      color: "#ffffff",
       opacity: 0.4,
-      width: 1.2819280197416927,
+      width: 1,
     },
     move: {
       enable: true,
-      speed: 6,
+      speed: 3,
       direction: "none",
-      random: true,
+      random: false,
       straight: false,
       out_mode: "bounce",
       bounce: false,
@@ -72,11 +72,11 @@ const particlesConfig = {
     events: {
       onhover: {
         enable: true,
-        mode: "grab",
+        mode: "repulse",
       },
       onclick: {
         enable: true,
-        mode: "repulse",
+        mode: "push",
       },
       resize: true,
     },

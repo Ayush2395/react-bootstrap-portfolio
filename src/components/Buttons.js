@@ -8,7 +8,7 @@ function Buttons({ mywork, contact }) {
       <Container>
         <Row>
           <Col>
-            <Button as={Link} to="/mywork" variant="outline-warning">
+            <Button as={Link} to="/mywork" variant="outline-primary">
               {mywork}
             </Button>
           </Col>

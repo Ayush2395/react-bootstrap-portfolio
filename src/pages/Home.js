@@ -1,21 +1,24 @@
 import React from "react";
-import { Col, Row, Button, Container } from "react-bootstrap";
+import { Col, Row, Button, Container, Image } from "react-bootstrap";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import { Typewriter } from "react-simple-typewriter";
 import ParticlesBackground from "../components/ParticlesBackground";
+import ProfilePic from "../img/profile-img.png";
 
 function Home() {
   return (
     <div>
-
-        <Helmet>
-            <title>Ayush | Home</title>
-        </Helmet>
+      <Helmet>
+        <title>Ayush | Home</title>
+      </Helmet>
 
       <div className="home-section">
         <ParticlesBackground />
         <div className="content">
+          <div className="img">
+            <Image src={ProfilePic} alt="profile-pic" />
+          </div>
           <span className="hello">Hi I'm</span>
           <h1>Ayush</h1>
           <p>
@@ -49,7 +52,7 @@ function Home() {
         >
           <Row>
             <Col>
-              <Button as={Link} to="/mywork" variant="outline-light">
+              <Button as={Link} to="/mywork" variant="outline-primary">
                 My Work
               </Button>
             </Col>

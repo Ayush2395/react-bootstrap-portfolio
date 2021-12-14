@@ -1,6 +1,9 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-import UnderCons from "../components/UnderCons";
+// import { CardsMenu } from "../components/CardMenu";
+import SearchBar from "../components/SearchBar";
+// import All from "../components/All";
+// import UnderCons from "../components/UnderCons";
 
 function MyWork() {
   return (
@@ -8,7 +11,10 @@ function MyWork() {
       <Helmet>
         <title>Ayush | My Work</title>
       </Helmet>
-      <UnderCons pageTitle='My Work' />
+
+      <SearchBar />
+
+      {/* <CardsMenu /> */}
     </div>
   );
 }

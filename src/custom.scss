@@ -1,0 +1,57 @@
+$body-bg: #1f1f1f;
+$body-color: white;
+$primary: rgb(95, 218, 255);
+$warning: rgb(255, 173, 51);
+$danger: #ff3e6f;
+
+@import "~bootstrap/scss/bootstrap";
+
+// .home-section {
+//   background: #1f1f1f url("../src/img/eclipse.jpg");
+//   background-position: center;
+//   background-size: cover;
+// }
+
+.img img {
+  width: 250px;
+  display: flex;
+  position: relative;
+  top: -80px;
+  left: 10px;
+  border-radius: 50%;
+  border: 8px solid #ff3e6f;
+}
+
+.navbar::before {
+  content: "";
+  position: absolute;
+  min-height: 100%;
+  width: 100%;
+  background: rgba(90, 90, 90, 0.342);
+  z-index: -1;
+  border: 1px solid rgba(255, 255, 255, 0.418);
+  border-radius: 10px;
+  backdrop-filter: blur(3px);
+}
+
+.card {
+  border: none;
+  border-radius: 10px;
+}
+
+.card-body {
+  background-color: #363636;
+}
+
+.card-body h3 {
+  color: $primary;
+}
+
+.services {
+  background: #1f1f1f
+    url("https://images.unsplash.com/photo-1496115965489-21be7e6e59a0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80");
+  background-position: 50px -750px;
+  background-size: cover;
+  padding: 10px 5px 10px 15px;
+  border-radius: 10px;
+}

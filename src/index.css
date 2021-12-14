@@ -21,11 +21,14 @@
   font-family: "Fira Code" !important;
 }
 
+/* ---------------------
+Custom scrollbar
+--------------------- */
 ::-webkit-scrollbar {
   width: 10px;
 }
 ::-webkit-scrollbar-track {
-  background-color: var(--bs-pink);
+  background-color: var(--primary-red);
   /* border-radius: 100px; */
 }
 
@@ -45,9 +48,6 @@ nav {
 }
 
 .home-section {
-  background-image: url("/src/img/eclipse.jpg");
-  background-position: center;
-  background-size: cover;
   min-height: 90vh;
   color: var(--primary-white);
   display: flex;
